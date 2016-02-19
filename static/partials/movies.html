@@ -1,0 +1,14 @@
+<a ui-sref="newMovie" class="btn-primary btn-lg nodecoration">Agregar trabajo</a>
+<table class="table movietable">
+    <tr>
+        <td><h3>Lista de trabajos</h3></td>
+        <td></td>
+    </tr>
+    <tr ng-repeat="movie in movies">
+        <td>{{movie.nombre}}</td>
+        <td>
+            <a class="btn btn-primary" ui-sref="viewMovie({id:movie.id})">Ver</a>
+            <a class="btn btn-danger"  ng-click="deleteMovie(movie)">Eliminar</a>
+        </td>
+    </tr>
+</table>
