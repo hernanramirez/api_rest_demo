@@ -8,5 +8,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^frontend/', include('frontend.urls')),
     url(r'^trabajos/', include('trabajos.urls')),
-    url(r'^trabajos2/', include('trabajos2.urls')),
+    url(r'^trabajos/api/v2/', include('trabajos2.urls')),
 ]
